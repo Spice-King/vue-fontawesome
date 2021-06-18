@@ -1,4 +1,4 @@
-import { ComponentPublicInstance } from 'vue'
+import { DefineComponent } from 'vue'
 
 interface FontAwesomeIconProps {
   border: boolean
@@ -30,6 +30,6 @@ interface FontAwesomeLayersTextProps {
   position: 'bottom-left' | 'bottom-right' | 'top-left' | 'top-right' | null
 }
 
-declare const FontAwesomeIcon: ComponentPublicInstance<FontAwesomeIconProps>
-declare const FontAwesomeLayers: ComponentPublicInstance<FontAwesomeLayersProps>
-declare const FontAwesomeLayersText: ComponentPublicInstance<FontAwesomeLayersTextProps>
+declare const FontAwesomeIcon: DefineComponent<FontAwesomeIconProps>
+declare const FontAwesomeLayers: DefineComponent<FontAwesomeLayersProps>
+declare const FontAwesomeLayersText: DefineComponent<FontAwesomeLayersTextProps>
